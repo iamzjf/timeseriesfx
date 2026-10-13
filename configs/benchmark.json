@@ -1,0 +1,58 @@
+{
+  "dataset": {
+    "name": "ETTh1",
+    "path": "data/ETTh1.csv",
+    "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+    "train_end": 8640,
+    "val_end": 11520,
+    "test_end": 14400,
+    "split_source": "TFB paper Table 5: 8640/2880/2880 hourly rows; first 20 months (30-day benchmark months)"
+  },
+  "input_length": 96,
+  "horizons": [96, 192, 336, 720],
+  "seeds": [2024, 2025, 2026],
+  "training": {"num_epochs": 10, "patience": 3, "num_threads": 4},
+  "evaluation": {
+    "stride": 1,
+    "features": "M",
+    "metric_functions": ["mse_norm", "mae_norm"],
+    "metric_scale": "StandardScaler fitted on training rows [0,8640) only",
+    "target_columns": ["HUFL", "HULL", "MUFL", "MULL", "LUFL", "LULL", "OT"],
+    "drop_last": false,
+    "num_rollings": "all",
+    "checkpoint_selection": "minimum element-weighted validation MSE",
+    "standard_deviation_ddof": 1
+  },
+  "protocol_notes": [
+    "All horizons are trained independently. Smoke tests use one epoch and seed 2024 and never enter formal summaries.",
+    "All models use seq_len=96 as requested; this overrides longer seq_len in some upstream ETTh1 scripts.",
+    "Training drop_last=True follows the upstream multivariate adapter. Validation and test include all windows.",
+    "Validation uses training-tail context; test uses earlier observations only, with no refitting on validation or test.",
+    "Unchanged TFB forecast_fit, model classes, Adam, early stopping and batch_forecast are reused. Instrumentation subclass weights validation by element count, orders validation windows and saves checkpoints and logs.",
+    "Full deterministic policy follows TFB, additionally torch deterministic algorithms are required and TF32 is disabled; AMP is disabled.",
+    "Time marks are passed unchanged by the adapter, including calendar covariate tokens for iTransformer.",
+    "PatchTST h96 upstream n_headers=2 is an unused typo; actual n_heads=8 is preserved explicitly.",
+    "DLinear h720 upstream omits lr; inherited adapter default 0.0001 is retained.",
+    "No test-based hyperparameter search. Epoch and patience budgets are TFB TransformerAdapter defaults."
+  ],
+  "models": {
+    "DLinear": {
+      "96": {"batch_size": 32, "d_ff": 2048, "d_model": 512, "lr": 0.005, "moving_avg": 25, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/DLinear.sh line 1"},
+      "192": {"batch_size": 64, "d_ff": 2048, "d_model": 512, "lr": 0.001, "moving_avg": 25, "period_len": 24, "station_lr": 0.00001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/DLinear.sh line 3"},
+      "336": {"batch_size": 32, "d_ff": 2048, "d_model": 512, "lr": 0.005, "moving_avg": 25, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/DLinear.sh line 5"},
+      "720": {"batch_size": 64, "d_ff": 2048, "d_model": 512, "lr": 0.0001, "moving_avg": 25, "factor": 3, "period_len": 24, "station_lr": 0.0001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/DLinear.sh line 7; lr inherited adapter default"}
+    },
+    "PatchTST": {
+      "96": {"batch_size": 32, "d_ff": 2048, "d_model": 512, "e_layers": 1, "factor": 3, "n_heads": 8, "lr": 0.0001, "patch_len": 16, "stride": 8, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/PatchTST.sh line 1; upstream n_headers typo leaves n_heads=8"},
+      "192": {"batch_size": 32, "d_ff": 512, "d_model": 128, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "patch_len": 16, "stride": 8, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/PatchTST.sh line 3"},
+      "336": {"batch_size": 64, "d_ff": 512, "d_model": 128, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "patch_len": 16, "stride": 8, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/PatchTST.sh line 5"},
+      "720": {"batch_size": 64, "d_ff": 512, "d_model": 128, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "patch_len": 16, "stride": 8, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/PatchTST.sh line 7"}
+    },
+    "iTransformer": {
+      "96": {"batch_size": 32, "d_ff": 256, "d_model": 256, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/iTransformer.sh line 1"},
+      "192": {"batch_size": 32, "d_ff": 256, "d_model": 256, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/iTransformer.sh line 3"},
+      "336": {"batch_size": 32, "d_ff": 128, "d_model": 128, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/iTransformer.sh line 5"},
+      "720": {"batch_size": 32, "d_ff": 512, "d_model": 512, "e_layers": 2, "n_heads": 8, "lr": 0.0001, "source": "vendor/TFB/scripts/multivariate_forecast/ETTh1_script/iTransformer.sh line 7"}
+    }
+  }
+}

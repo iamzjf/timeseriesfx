@@ -1,0 +1,19 @@
+RUN_CONFIG {"stage": "smoke", "model": "DLinear", "horizon": 96, "seed": 2024, "dataset": {"name": "ETTh1", "path": "data/ETTh1.csv", "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066", "train_end": 8640, "val_end": 11520, "test_end": 14400, "split_source": "TFB paper Table 5: 8640/2880/2880 hourly rows; first 20 months (30-day benchmark months)"}, "model_parameters": {"batch_size": 32, "d_ff": 2048, "d_model": 512, "lr": 0.005, "moving_avg": 25, "seq_len": 96, "horizon": 96, "norm": true, "num_epochs": 1, "patience": 3, "num_workers": 0, "task_name": "long_term_forecast", "use_amp": 0}, "training": {"num_epochs": 10, "patience": 3, "num_threads": 4}, "evaluation": {"stride": 1, "features": "M", "metric_functions": ["mse_norm", "mae_norm"], "metric_scale": "StandardScaler fitted on training rows [0,8640) only", "target_columns": ["HUFL", "HULL", "MUFL", "MULL", "LUFL", "LULL", "OT"], "drop_last": false, "num_rollings": "all", "checkpoint_selection": "minimum element-weighted validation MSE", "standard_deviation_ddof": 1}, "tfb_commit": "889459188ec89c9cb3c7e5ec40f30b8c0c5c2529", "instrumentation_sha256": "c8d44f3267c0f45766fc446850b4e79f48df890d1dff22e15c0d2d3b05568a11", "runner_sha256": "db4d2e7956b6c618a184f5a7b56aa338d860d6c64111372522d95d328029fa4f", "environment_signature": {"python": "3.8.20", "torch": "2.4.1+cu121", "cuda_runtime": "12.1", "device": "NVIDIA GeForce RTX 3050 Laptop GPU"}}
+The model parameter horizon is deprecated. Please use pred_len.
+---------------------------------------------------------- DLinear
+Total trainable parameters: 18624
+FIRST_BATCH_CHECK {"input_shape": [32, 96, 7], "input_mark_shape": [32, 96, 4], "decoder_shape": [32, 144, 7], "output_shape": [32, 96, 7], "forward_finite": true, "first_batch_loss": 0.541254997253418, "target_shape": [32, 96, 7], "loss_finite": true, "backward_finite": true, "gradient_l2": 0.32129312828555934, "gradient_tensors": 4}
+EPOCH {"Epoch": 1, "Train MSE": 0.36825135337325915, "Validation MSE": 0.6745196892393341, "Learning Rate": 0.005, "Epoch Time": 2.6624701, "Train Batches": 264, "Train Elements": 5677056, "Validation Windows": 2785, "Validation Elements": 1871520}
+Validation loss decreased (inf --> 0.674520).  Saving model ...
+Updating learning rate to 0.005
+Traceback (most recent call last):
+  File "D:\CodexWorks\时间序列\ts预测任务\scripts\run_experiments.py", line 203, in execute_one
+    checkpoint = torch.load(run_dir / "best.pt", map_location="cpu", weights_only=True)
+  File "E:\conda_envs\tsfx\lib\site-packages\torch\serialization.py", line 1096, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options 
+	(1) Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL torch.torch_version.TorchVersion was not an allowed global by default. Please use `torch.serialization.add_safe_globals([TorchVersion])` to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.

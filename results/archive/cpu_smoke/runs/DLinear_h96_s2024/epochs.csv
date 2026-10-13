@@ -1,0 +1,2 @@
+Epoch,Train MSE,Validation MSE,Learning Rate,Epoch Time,Train Batches,Train Elements,Validation Windows,Validation Elements
+1,0.3682513513950386,0.6745196831611585,0.005,1.9213069000000003,264,5677056,2785,1871520

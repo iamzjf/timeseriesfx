@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "model": "DLinear",
+  "horizon": 96,
+  "seed": 2024,
+  "original_configuration_sha256": "5cc34c1a39284ac212b990b59fef09aeea9738522d8fc9a18df39251ab90ebf6",
+  "original_predictions_sha256": "e166592aa7794f666efd8386bddb693ecea3f495120483e4092de106fc9ef347",
+  "repeat_predictions_sha256": "e166592aa7794f666efd8386bddb693ecea3f495120483e4092de106fc9ef347",
+  "original_MSE": 0.39515883793261725,
+  "repeat_MSE": 0.39515883793261725,
+  "original_MAE": 0.41127749434053973,
+  "repeat_MAE": 0.41127749434053973,
+  "description": "A separate full training, validation selection and test run; predictions must match bit for bit. Canonical benchmark files are preserved."
+}

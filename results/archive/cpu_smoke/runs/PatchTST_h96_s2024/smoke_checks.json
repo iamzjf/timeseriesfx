@@ -1,0 +1,51 @@
+{
+  "input_shape": [
+    32,
+    96,
+    7
+  ],
+  "input_mark_shape": [
+    32,
+    96,
+    4
+  ],
+  "decoder_shape": [
+    32,
+    144,
+    7
+  ],
+  "output_shape": [
+    32,
+    96,
+    7
+  ],
+  "forward_finite": true,
+  "first_batch_loss": 0.7882460639590309,
+  "target_shape": [
+    32,
+    96,
+    7
+  ],
+  "loss_finite": true,
+  "backward_finite": true,
+  "gradient_l2": 2.900622294840251,
+  "gradient_tensors": 21,
+  "best_checkpoint_reloaded_from_disk": true,
+  "test_prediction_shape": [
+    2785,
+    96,
+    7
+  ],
+  "test_windows": 2785,
+  "test_last_batch_size": 1,
+  "test_drop_last": false,
+  "test_prediction_finite": true,
+  "validation_shuffle": false,
+  "validation_drop_last": false,
+  "scaler_train_rows": 8640,
+  "official_metrics_match_vectorized": true,
+  "best_checkpoint_exists": true,
+  "first_test_origin": 11520,
+  "last_test_origin": 14304,
+  "status": "passed"
+}

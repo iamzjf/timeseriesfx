@@ -1,0 +1,14 @@
+# Relevant subset of TFB requirements-docker.txt (see docs/environment_notes.md).
+# Install torch separately with the CUDA 12.1 index, then install this file.
+torch==2.4.1
+numpy==1.24.4
+pandas==1.5.3
+scipy==1.10.1
+scikit-learn==1.3.2
+matplotlib==3.7.5
+reformer-pytorch==1.4.4
+einops==0.8.0
+statsmodels==0.14.1
+tqdm==4.66.4
+importlib-resources==6.4.5
+zipp==3.20.2

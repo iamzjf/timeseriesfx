@@ -1,0 +1,9 @@
+Processing e:\conda_envs\wheelhouse_tsfx\torch-2.4.1+cu121-cp38-cp38-win_amd64.whl
+Installing collected packages: torch
+  Attempting uninstall: torch
+    Found existing installation: torch 2.4.1
+    Uninstalling torch-2.4.1:
+      Successfully uninstalled torch-2.4.1
+  WARNING: The scripts convert-caffe2-to-onnx.exe, convert-onnx-to-caffe2.exe and torchrun.exe are installed in 'E:\conda_envs\tsfx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed torch-2.4.1+cu121

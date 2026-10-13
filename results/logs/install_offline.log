@@ -1,0 +1,60 @@
+Processing e:\conda_envs\wheelhouse_tsfx\axial_positional_embedding-0.3.12-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\colorama-0.4.6-py2.py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\colt5_attention-0.11.2-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\contourpy-1.1.0-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\cycler-0.12.1-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\einops-0.8.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\filelock-3.16.1-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\fonttools-4.57.0-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\fsspec-2025.3.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\jinja2-3.1.6-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\joblib-1.4.2-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\kiwisolver-1.4.7-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\local_attention-1.10.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\markupsafe-2.1.5-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\matplotlib-3.7.5-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\mpmath-1.3.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\networkx-3.1-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\numpy-1.24.4-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\packaging-26.2-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\pandas-1.5.3-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\patsy-1.0.3-py2.py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\pillow-10.4.0-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\product_key_memory-0.3.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\pyparsing-3.1.4-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\pytz-2026.5-py2.py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\reformer_pytorch-1.4.4-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\scikit_learn-1.3.2-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\scipy-1.10.1-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\six-1.17.0-py2.py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\statsmodels-0.14.1-cp38-cp38-win_amd64.whl
+Processing e:\conda_envs\wheelhouse_tsfx\sympy-1.13.3-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\threadpoolctl-3.5.0-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\tqdm-4.66.4-py3-none-any.whl
+Processing e:\conda_envs\wheelhouse_tsfx\typing_extensions-4.13.2-py3-none-any.whl
+colorama is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+cycler is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+fonttools is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+kiwisolver is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+matplotlib is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+numpy is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+pillow is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+pyparsing is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+python-dateutil is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+six is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+typing-extensions is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.
+Installing collected packages: reformer-pytorch, pytz, mpmath, local-attention, tqdm, threadpoolctl, sympy, statsmodels, scipy, scikit-learn, product-key-memory, patsy, pandas, packaging, networkx, MarkupSafe, joblib, jinja2, fsspec, filelock, einops, contourpy, colt5-attention, axial-positional-embedding
+  WARNING: The script tqdm.exe is installed in 'E:\conda_envs\tsfx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script isympy.exe is installed in 'E:\conda_envs\tsfx\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: packaging
+    Found existing installation: packaging 25.0
+    Uninstalling packaging-25.0:
+      Successfully uninstalled packaging-25.0
+  Attempting uninstall: contourpy
+    Found existing installation: contourpy 1.1.1
+    Uninstalling contourpy-1.1.1:
+      Successfully uninstalled contourpy-1.1.1
+Successfully installed MarkupSafe-2.1.5 axial-positional-embedding-0.3.12 colt5-attention-0.11.2 contourpy-1.1.0 einops-0.8.0 filelock-3.16.1 fsspec-2025.3.0 jinja2-3.1.6 joblib-1.4.2 local-attention-1.10.0 mpmath-1.3.0 networkx-3.1 packaging-26.2 pandas-1.5.3 patsy-1.0.3 product-key-memory-0.3.0 pytz-2026.5 reformer-pytorch-1.4.4 scikit-learn-1.3.2 scipy-1.10.1 statsmodels-0.14.1 sympy-1.13.3 threadpoolctl-3.5.0 tqdm-4.66.4

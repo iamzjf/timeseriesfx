@@ -1,0 +1,94 @@
+Verified D:\CodexWorks\时间序列\ts预测任务\data\ETTh1.csv: 17420 rows, 7 variables, hourly, no missing values
+SHA256: f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066
+TFB benchmark: first 14400 rows; train/validation/test = 8640/2880/2880
+Manifest: D:\CodexWorks\时间序列\ts预测任务\data\manifest.json
+{
+  "captured_at_Asia_Shanghai": "2026-10-13T10:22:01.622973+08:00",
+  "python": "3.8.20 (default, Oct  3 2024, 15:19:54) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "E:\\conda_envs\\tsfx\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "logical_cpu_count": 12,
+  "torch": "2.4.1+cu121",
+  "cuda_runtime": "12.1",
+  "cuda_available": true,
+  "tfb_commit": "889459188ec89c9cb3c7e5ec40f30b8c0c5c2529",
+  "tfb_worktree_status": "",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_memory_bytes": 4294443008,
+  "compute_capability": [
+    8,
+    6
+  ]
+}
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\smoke\DLinear_h96_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\smoke\PatchTST_h96_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\smoke\iTransformer_h96_s2024
+STAGE FINISHED: smoke
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\DLinear_h96_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\DLinear_h96_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\DLinear_h96_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\PatchTST_h96_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\PatchTST_h96_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\PatchTST_h96_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\iTransformer_h96_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\iTransformer_h96_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\main\iTransformer_h96_s2026
+STAGE FINISHED: main
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h192_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h192_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h192_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h336_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h336_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h336_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h720_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h720_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\DLinear_h720_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h192_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h192_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h192_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h336_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h336_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h336_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h720_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h720_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\PatchTST_h720_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h192_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h192_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h192_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h336_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h336_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h336_s2026
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h720_s2024
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h720_s2025
+SKIP COMPLETE D:\CodexWorks\时间序列\ts预测任务\results\runs\extended\iTransformer_h720_s2026
+STAGE FINISHED: extended
+Traceback (most recent call last):
+  File "scripts/build_report.py", line 254, in <module>
+    main()
+  File "scripts/build_report.py", line 107, in main
+    paths = figures(formal)
+  File "scripts/build_report.py", line 60, in figures
+    fig.savefig(folder / filename, dpi=140)
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\figure.py", line 3378, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\backend_bases.py", line 2366, in print_figure
+    result = print_method(
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\backend_bases.py", line 2232, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\backends\backend_agg.py", line 509, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\backends\backend_agg.py", line 458, in _print_pil
+    mpl.image.imsave(
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\matplotlib\image.py", line 1689, in imsave
+    image.save(fname, **pil_kwargs)
+  File "C:\Users\zhangjinfu1\AppData\Roaming\Python\Python38\site-packages\PIL\Image.py", line 2563, in save
+    fp = builtins.open(filename, "w+b")
+OSError: [Errno 22] Invalid argument: 'D:\\CodexWorks\\时间序列\\ts预测任务\\results\\figures\\all_variables_h336.png'
+Report generation failed.
+At D:\CodexWorks\时间序列\ts预测任务\run.ps1:23 char:28
++ if ($LASTEXITCODE -ne 0) { throw 'Report generation failed.' }
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Report generation failed.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Report generation failed.
+ 

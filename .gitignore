@@ -1,0 +1,21 @@
+
+
+
+results/runs/
+
+
+# Python 缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Python 环境
+.venv/
+venv/
+
+# TFB 第三方代码（如果单独管理）
+vendor/TFB/
+vendor/
+
+# 数据集
+data/

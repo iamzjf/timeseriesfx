@@ -1,0 +1,7 @@
+name: tsfx
+channels:
+  - defaults
+dependencies:
+  - python=3.8.20
+  - pip=24.2
+# CUDA torch and the pinned experiment dependencies are installed by setup.ps1.

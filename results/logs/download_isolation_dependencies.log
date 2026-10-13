@@ -1,0 +1,12 @@
+Collecting importlib-resources==6.4.5
+  Downloading importlib_resources-6.4.5-py3-none-any.whl.metadata (4.0 kB)
+Collecting zipp==3.20.2
+  Downloading zipp-3.20.2-py3-none-any.whl.metadata (3.7 kB)
+Downloading importlib_resources-6.4.5-py3-none-any.whl (36 kB)
+Downloading zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Saved e:\conda_envs\wheelhouse_tsfx\importlib_resources-6.4.5-py3-none-any.whl
+Saved e:\conda_envs\wheelhouse_tsfx\zipp-3.20.2-py3-none-any.whl
+Successfully downloaded importlib-resources zipp
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip

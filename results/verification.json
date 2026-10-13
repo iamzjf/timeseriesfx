@@ -1,0 +1,287 @@
+{
+  "verified_runs": 40,
+  "formal_runs": 36,
+  "checks": [
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 192,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 192,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 192,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 336,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 336,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 336,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 720,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 720,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "DLinear",
+      "horizon": 720,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 192,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 192,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 192,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 336,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 336,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 336,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 720,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 720,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "iTransformer",
+      "horizon": 720,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 192,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 192,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 192,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 336,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 336,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 336,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 720,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 720,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "extended",
+      "model": "PatchTST",
+      "horizon": 720,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "DLinear",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "DLinear",
+      "horizon": 96,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "DLinear",
+      "horizon": 96,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "iTransformer",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "iTransformer",
+      "horizon": 96,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "iTransformer",
+      "horizon": 96,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "PatchTST",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "PatchTST",
+      "horizon": 96,
+      "seed": 2025,
+      "verified": true
+    },
+    {
+      "stage": "main",
+      "model": "PatchTST",
+      "horizon": 96,
+      "seed": 2026,
+      "verified": true
+    },
+    {
+      "stage": "reproducibility",
+      "model": "DLinear",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "smoke",
+      "model": "DLinear",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "smoke",
+      "model": "iTransformer",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    },
+    {
+      "stage": "smoke",
+      "model": "PatchTST",
+      "horizon": 96,
+      "seed": 2024,
+      "verified": true
+    }
+  ],
+  "checks_description": "Independent raw CSV targets, manual train-only scaling, full-window metrics, disk best validation checkpoints and ddof=1 summaries."
+}
